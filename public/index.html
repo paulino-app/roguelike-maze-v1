@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rogue Like Maze</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Script -->
+    <script type="module" src="js/Main.js" defer></script>
+  </head>
+  <body>
+    <canvas width="512" height="512" id="canvas"></canvas>
+    <div class="controls">
+      <h1>Rogue Like Maze v1</h1>
+      <br />
+      Rooms: <span id="roomValue">(10)</span>
+      <input
+        type="range"
+        min="5"
+        max="256"
+        value="10"
+        name=""
+        id="input-room"
+        class="slider"
+      />
+
+      <!-- <br />
+      Map Width: <span id="widthValue">(16)</span>
+      <input
+        type="range"
+        min="5"
+        max="64"
+        value="16"
+        name=""
+        id="input-width"
+        class="slider"
+      />
+      <br />
+      Map Height: <span id="heightValue">(16)</span>
+      <input
+        type="range"
+        min="5"
+        max="64"
+        value="16"
+        name=""
+        id="input-height"
+        class="slider"
+      /> -->
+      <input type="button" value="Generate" id="btn-generate" />
+    </div>
+  </body>
+</html>
